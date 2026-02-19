@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hatay / Hassa İmsakiyesi 2026 — Ahmet Kaan Muktar</title>
+    <meta name="description"
+        content="Hatay Hassa 2026 Ramazan İmsakiyesi - İftar ve sahur vakitleri, geri sayım sayacı — Ahmet Kaan Muktar">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Amiri:wght@400;700&family=Playfair+Display:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* ============================================
+   HATAY / HASSA İMSAKİYE 2026
+   Premium Design — Ahmet Kaan Muktar
+   ============================================ */
+        :root {
+            --bg-primary: #060a14;
+            --bg-secondary: #0f1729;
+            --bg-card: rgba(15, 23, 42, 0.88);
+            --bg-card-hover: rgba(30, 41, 59, 0.92);
+            --bg-glass: rgba(255, 255, 255, 0.035);
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent: #f59e0b;
+            --accent-glow: rgba(245, 158, 11, 0.35);
+            --accent-light: #fbbf24;
+            --accent2: #10b981;
+            --accent2-glow: rgba(16, 185, 129, 0.3);
+            --gold: #d4a843;
+            --gold-light: #f7dc6f;
+            --emerald: #34d399;
+            --border: rgba(255, 255, 255, 0.055);
+            --border-accent: rgba(245, 158, 11, 0.22);
+            --radius: 18px;
+            --radius-sm: 12px;
+            --radius-xs: 8px;
+            --shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+            --shadow-glow: 0 0 80px rgba(245, 158, 11, 0.06);
+            --font: 'Outfit', sans-serif;
+            --font-display: 'Playfair Display', serif;
+            --font-arabic: 'Amiri', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: var(--font);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+            line-height: 1.6
+        }
+
+        /* ============ ANIMATED BG ============ */
+        .bg-stars {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden
+        }
+
+        .bg-stars .star {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            animation: twinkle ease-in-out infinite
+        }
+
+        @keyframes twinkle {
+
+            0%,
+            100% {
+                opacity: 0.2;
+                transform: scale(0.8)
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.2)
+            }
+        }
+
+        .bg-mesh {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background: radial-gradient(ellipse at 20% 0%, rgba(245, 158, 11, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 100%, rgba(16, 185, 129, 0.04) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(99, 102, 241, 0.03) 0%, transparent 60%);
+        }
+
+        /* ============ GREETING BANNER ============ */
+        .greeting-banner {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 48px 24px 36px;
+            background: linear-gradient(180deg, rgba(245, 158, 11, 0.08) 0%, transparent 100%);
+            overflow: hidden;
+        }
+
+        .greeting-banner::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .greeting-mosque {
+            font-size: 3rem;
+            margin-bottom: 12px;
+            display: block;
+            filter: drop-shadow(0 0 30px rgba(245, 158, 11, 0.4));
+            animation: floatMosque 4s ease-in-out infinite
+        }
+
+        @keyframes floatMosque {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-8px)
+            }
+        }
+
+        .greeting-name {
+            font-family: var(--font-display);
+            font-size: clamp(1.6rem, 4vw, 2.4rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #fde68a, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .greeting-message {
+            font-family: var(--font-arabic);
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            color: var(--accent-light);
+            font-weight: 400;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 0 40px rgba(245, 158, 11, 0.3);
+        }
+
+        .greeting-divider {
+            width: 120px;
+            height: 2px;
+            margin: 20px auto 0;
+            border: none;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+        }
+
+        .greeting-ornament {
+            font-size: 0.9rem;
+            color: var(--gold);
+            margin-top: 10px;
+            letter-spacing: 8px;
+            opacity: 0.5;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ============ HEADER ============ */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(6, 10, 20, 0.85);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border-bottom: 1px solid var(--border);
+            padding: 14px 24px;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 14px
+        }
+
+        .header-icon {
+            font-size: 1.8rem;
+            color: var(--accent);
+            filter: drop-shadow(0 0 12px var(--accent-glow));
+            animation: iconPulse 3s ease-in-out infinite
+        }
+
+        @keyframes iconPulse {
+
+            0%,
+            100% {
+                transform: scale(1)
+            }
+
+            50% {
+                transform: scale(1.08)
+            }
+        }
+
+        .header-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--gold-light), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.3px
+        }
+
+        .header-subtitle {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-top: 1px
+        }
+
+        /* ============ HERO / COUNTDOWN ============ */
+        .hero {
+            position: relative;
+            z-index: 1;
+            padding: 32px 24px 20px;
+            display: flex;
+            justify-content: center
+        }
+
+        .hero-card {
+            width: 100%;
+            max-width: 720px;
+            background: linear-gradient(160deg, rgba(15, 23, 42, 0.96), rgba(30, 41, 59, 0.85));
+            border: 1px solid var(--border-accent);
+            border-radius: var(--radius);
+            padding: 36px 32px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow), var(--shadow-glow), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+        }
+
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 25% 15%, rgba(245, 158, 11, 0.07) 0%, transparent 45%),
+                radial-gradient(circle at 75% 85%, rgba(16, 185, 129, 0.05) 0%, transparent 45%);
+            pointer-events: none;
+        }
+
+        .hero-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 10%, rgba(245, 158, 11, 0.4) 50%, transparent 90%);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.18);
+            border-radius: 24px;
+            padding: 6px 16px;
+            font-size: 0.73rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.06);
+        }
+
+        .hero-badge-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--accent2);
+            border-radius: 50%;
+            animation: dotBlink 1.5s ease-in-out infinite;
+            box-shadow: 0 0 6px var(--accent2)
+        }
+
+        @keyframes dotBlink {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: 0.3
+            }
+        }
+
+        .hero-date {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            position: relative;
+            z-index: 1
+        }
+
+        .hero-day-info {
+            font-size: 0.92rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-top: 4px;
+            margin-bottom: 22px;
+            position: relative;
+            z-index: 1
+        }
+
+        .countdown-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 18px;
+            position: relative;
+            z-index: 1
+        }
+
+        .countdown-timer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 28px;
+            position: relative;
+            z-index: 1
+        }
+
+        .countdown-unit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 88px;
+            padding: 12px 8px;
+            background: rgba(255, 255, 255, 0.025);
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(255, 255, 255, 0.04)
+        }
+
+        .countdown-number {
+            font-size: 3.6rem;
+            font-weight: 800;
+            background: linear-gradient(180deg, #fef3c7 0%, var(--accent) 60%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            filter: drop-shadow(0 0 24px var(--accent-glow));
+            font-variant-numeric: tabular-nums;
+        }
+
+        .countdown-text {
+            font-size: 0.68rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 8px;
+            font-weight: 600
+        }
+
+        .countdown-separator {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--accent);
+            opacity: 0.4;
+            line-height: 1;
+            margin-bottom: 20px;
+            animation: sepBlink 1s ease-in-out infinite
+        }
+
+        @keyframes sepBlink {
+
+            0%,
+            100% {
+                opacity: 0.4
+            }
+
+            50% {
+                opacity: 0.1
+            }
+        }
+
+        .hero-progress-bar {
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 3px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1
+        }
+
+        .hero-progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent2), var(--accent-light), var(--accent));
+            border-radius: 3px;
+            transition: width 1s linear;
+            box-shadow: 0 0 12px var(--accent-glow)
+        }
+
+        .hero-progress-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-top: 6px;
+            position: relative;
+            z-index: 1;
+            font-weight: 500
+        }
+
+        .today-times {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+            gap: 8px;
+            margin-top: 26px;
+            position: relative;
+            z-index: 1
+        }
+
+        .today-time-item {
+            background: var(--bg-glass);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 12px 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .today-time-item:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: var(--border-accent);
+            transform: translateY(-3px)
+        }
+
+        .today-time-item.active {
+            background: rgba(245, 158, 11, 0.1);
+            border-color: rgba(245, 158, 11, 0.3);
+            box-shadow: 0 0 24px rgba(245, 158, 11, 0.08)
+        }
+
+        .today-time-label {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            font-weight: 600;
+            margin-bottom: 5px
+        }
+
+        .today-time-value {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            font-variant-numeric: tabular-nums
+        }
+
+        .today-time-item.active .today-time-value {
+            color: var(--accent)
+        }
+
+        /* ============ DAYS SECTION ============ */
+        .days-section {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 44px 24px 60px
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 36px
+        }
+
+        .section-title {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+            font-family: var(--font-display)
+        }
+
+        .section-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted)
+        }
+
+        .days-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+            gap: 16px
+        }
+
+        .day-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 22px;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            cursor: default;
+            animation: fadeInUp 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        .day-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .day-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--border-accent);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow), 0 0 50px rgba(245, 158, 11, 0.05);
+        }
+
+        .day-card:hover::before {
+            opacity: 1
+        }
+
+        .day-card.today {
+            border-color: var(--accent);
+            background: linear-gradient(155deg, rgba(245, 158, 11, 0.1), rgba(15, 23, 42, 0.92));
+            box-shadow: 0 0 40px rgba(245, 158, 11, 0.1), inset 0 1px 0 rgba(245, 158, 11, 0.15);
+        }
+
+        .day-card.today::before {
+            opacity: 1
+        }
+
+        .day-card.past {
+            opacity: 0.45
+        }
+
+        .day-card.past:hover {
+            opacity: 0.75
+        }
+
+        .day-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px
+        }
+
+        .day-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(245, 158, 11, 0.04));
+            border: 1px solid rgba(245, 158, 11, 0.18);
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .day-card.today .day-number {
+            background: linear-gradient(135deg, var(--accent), #d97706);
+            color: var(--bg-primary);
+            box-shadow: 0 0 24px var(--accent-glow);
+        }
+
+        .day-date {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 500
+        }
+
+        .day-card.today .day-date {
+            color: var(--accent-light);
+            font-weight: 600
+        }
+
+        .day-today-badge {
+            display: none;
+            font-size: 0.62rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: var(--bg-primary);
+            background: linear-gradient(135deg, var(--accent-light), var(--accent));
+            padding: 4px 12px;
+            border-radius: 14px;
+            box-shadow: 0 0 12px rgba(245, 158, 11, 0.3);
+        }
+
+        .day-card.today .day-today-badge {
+            display: inline-block
+        }
+
+        .day-times-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6px
+        }
+
+        .day-time-cell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 4px;
+            background: var(--bg-glass);
+            border-radius: var(--radius-xs);
+            border: 1px solid transparent;
+            transition: all 0.25s ease;
+        }
+
+        .day-time-cell:hover {
+            border-color: var(--border);
+            background: rgba(255, 255, 255, 0.05)
+        }
+
+        .day-time-cell.iftar-cell {
+            background: rgba(245, 158, 11, 0.07);
+            border-color: rgba(245, 158, 11, 0.12)
+        }
+
+        .day-time-cell.imsak-cell {
+            background: rgba(16, 185, 129, 0.07);
+            border-color: rgba(16, 185, 129, 0.12)
+        }
+
+        .day-time-cell-label {
+            font-size: 0.6rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            font-weight: 600;
+            margin-bottom: 3px
+        }
+
+        .day-time-cell-value {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            font-variant-numeric: tabular-nums
+        }
+
+        .day-time-cell.iftar-cell .day-time-cell-value {
+            color: var(--accent)
+        }
+
+        .day-time-cell.imsak-cell .day-time-cell-value {
+            color: var(--accent2)
+        }
+
+        .day-iftar-countdown {
+            margin-top: 12px;
+            text-align: center;
+            font-size: 0.78rem;
+            color: var(--accent);
+            font-weight: 600;
+            padding: 9px;
+            background: rgba(245, 158, 11, 0.05);
+            border-radius: var(--radius-xs);
+            border: 1px solid rgba(245, 158, 11, 0.1);
+        }
+
+        .day-iftar-countdown.passed {
+            color: var(--accent2);
+            background: rgba(16, 185, 129, 0.05);
+            border-color: rgba(16, 185, 129, 0.1)
+        }
+
+        /* ============ FOOTER ============ */
+        .footer {
+            position: relative;
+            z-index: 1;
+            border-top: 1px solid var(--border);
+            padding: 36px 24px;
+            text-align: center;
+            background: linear-gradient(180deg, transparent, rgba(245, 158, 11, 0.02))
+        }
+
+        .footer-content p {
+            color: var(--text-muted);
+            font-size: 0.85rem
+        }
+
+        .footer-name {
+            color: var(--accent);
+            font-weight: 600
+        }
+
+        .footer-note {
+            margin-top: 6px;
+            font-size: 0.72rem !important;
+            opacity: 0.5
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media(max-width:768px) {
+            .header {
+                padding: 12px 16px
+            }
+
+            .header-title {
+                font-size: 1.1rem
+            }
+
+            .greeting-banner {
+                padding: 36px 16px 28px
+            }
+
+            .greeting-name {
+                font-size: 1.5rem
+            }
+
+            .hero {
+                padding: 20px 16px 12px
+            }
+
+            .hero-card {
+                padding: 28px 20px
+            }
+
+            .countdown-number {
+                font-size: 2.5rem
+            }
+
+            .countdown-unit {
+                min-width: 64px;
+                padding: 10px 6px
+            }
+
+            .today-times {
+                grid-template-columns: repeat(3, 1fr)
+            }
+
+            .days-section {
+                padding: 24px 16px 40px
+            }
+
+            .days-grid {
+                grid-template-columns: 1fr
+            }
+
+            .section-title {
+                font-size: 1.3rem
+            }
+        }
+
+        @media(max-width:400px) {
+            .countdown-number {
+                font-size: 2rem
+            }
+
+            .countdown-timer {
+                gap: 6px
+            }
+
+            .countdown-unit {
+                min-width: 52px
+            }
+
+            .today-times {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary)
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 3px
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.15)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-stars" id="bgStars"></div>
+    <div class="bg-mesh"></div>
+
+    <!-- ☪ GREETING BANNER ☪ -->
+    <section class="greeting-banner">
+        <span class="greeting-mosque">🕌</span>
+        <h2 class="greeting-name">AHMET KAAN MUKTAR</h2>
+        <p class="greeting-message">Hayırlı İftarlar Diler</p>
+        <hr class="greeting-divider">
+        <div class="greeting-ornament">✦ ✦ ✦</div>
+    </section>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-icon">☪</div>
+            <div>
+                <h1 class="header-title">Hatay / Hassa İmsakiyesi</h1>
+                <p class="header-subtitle">Ramazan 2026 · Namaz Vakitleri</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- COUNTDOWN -->
+    <section class="hero">
+        <div class="hero-card" id="heroCard">
+            <div class="hero-badge" id="heroBadge">
+                <span class="hero-badge-dot"></span>
+                <span id="heroBadgeText">Canlı</span>
+            </div>
+            <div class="hero-date" id="heroDate"></div>
+            <div class="hero-day-info" id="heroDayInfo"></div>
+            <div class="countdown-label" id="countdownLabel">İftara Kalan Süre</div>
+            <div class="countdown-timer" id="countdownTimer">
+                <div class="countdown-unit">
+                    <span class="countdown-number" id="cdHours">00</span>
+                    <span class="countdown-text">Saat</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-unit">
+                    <span class="countdown-number" id="cdMinutes">00</span>
+                    <span class="countdown-text">Dakika</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-unit">
+                    <span class="countdown-number" id="cdSeconds">00</span>
+                    <span class="countdown-text">Saniye</span>
+                </div>
+            </div>
+            <div class="hero-progress-bar">
+                <div class="hero-progress-fill" id="heroProgressFill"></div>
+            </div>
+            <div class="hero-progress-labels">
+                <span id="progressStartLabel">İmsak</span>
+                <span id="progressEndLabel">İftar</span>
+            </div>
+            <div class="today-times" id="todayTimes"></div>
+        </div>
+    </section>
+
+    <!-- RAMAZAN TAKVİMİ -->
+    <section class="days-section">
+        <div class="section-header">
+            <h2 class="section-title">Ramazan Takvimi</h2>
+            <p class="section-desc">Tüm günlerin namaz vakitlerini görüntüleyin</p>
+        </div>
+        <div class="days-grid" id="daysGrid"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>☪ Hatay / Hassa İmsakiyesi 2026 — <span class="footer-name">Ahmet Kaan Muktar</span></p>
+            <p class="footer-note">Vakitler tahmini olup, resmi kaynaklar ile kontrol ediniz.</p>
+        </div>
+    </footer>
+
+    <script>
+        const IMSAKIYE_DATA = [
+            { gun: 1, tarih: "19 Şubat 2026", imsak: "5:36", sabah: "5:56", gunes: "7:10", ogle: "12:58", ikindi: "16:02", iftar: "18:26", yatsi: "19:50" },
+            { gun: 2, tarih: "20 Şubat 2026", imsak: "5:35", sabah: "5:55", gunes: "7:08", ogle: "12:58", ikindi: "16:03", iftar: "18:27", yatsi: "19:51" },
+            { gun: 3, tarih: "21 Şubat 2026", imsak: "5:34", sabah: "5:54", gunes: "7:07", ogle: "12:58", ikindi: "16:04", iftar: "18:28", yatsi: "19:52" },
+            { gun: 4, tarih: "22 Şubat 2026", imsak: "5:33", sabah: "5:53", gunes: "7:06", ogle: "12:57", ikindi: "16:05", iftar: "18:29", yatsi: "19:53" },
+            { gun: 5, tarih: "23 Şubat 2026", imsak: "5:32", sabah: "5:52", gunes: "7:05", ogle: "12:57", ikindi: "16:05", iftar: "18:30", yatsi: "19:54" },
+            { gun: 6, tarih: "24 Şubat 2026", imsak: "5:30", sabah: "5:50", gunes: "7:03", ogle: "12:57", ikindi: "16:06", iftar: "18:31", yatsi: "19:55" },
+            { gun: 7, tarih: "25 Şubat 2026", imsak: "5:29", sabah: "5:49", gunes: "7:02", ogle: "12:57", ikindi: "16:07", iftar: "18:32", yatsi: "19:55" },
+            { gun: 8, tarih: "26 Şubat 2026", imsak: "5:28", sabah: "5:48", gunes: "7:01", ogle: "12:57", ikindi: "16:07", iftar: "18:33", yatsi: "19:56" },
+            { gun: 9, tarih: "27 Şubat 2026", imsak: "5:27", sabah: "5:47", gunes: "7:00", ogle: "12:57", ikindi: "16:08", iftar: "18:34", yatsi: "19:57" },
+            { gun: 10, tarih: "28 Şubat 2026", imsak: "5:25", sabah: "5:45", gunes: "6:58", ogle: "12:56", ikindi: "16:08", iftar: "18:35", yatsi: "19:58" },
+            { gun: 11, tarih: "1 Mart 2026", imsak: "5:24", sabah: "5:44", gunes: "6:57", ogle: "12:56", ikindi: "16:09", iftar: "18:36", yatsi: "19:59" },
+            { gun: 12, tarih: "2 Mart 2026", imsak: "5:23", sabah: "5:43", gunes: "6:56", ogle: "12:56", ikindi: "16:10", iftar: "18:37", yatsi: "20:00" },
+            { gun: 13, tarih: "3 Mart 2026", imsak: "5:21", sabah: "5:41", gunes: "6:54", ogle: "12:56", ikindi: "16:10", iftar: "18:38", yatsi: "20:01" },
+            { gun: 14, tarih: "4 Mart 2026", imsak: "5:20", sabah: "5:40", gunes: "6:53", ogle: "12:56", ikindi: "16:11", iftar: "18:39", yatsi: "20:02" },
+            { gun: 15, tarih: "5 Mart 2026", imsak: "5:19", sabah: "5:39", gunes: "6:51", ogle: "12:55", ikindi: "16:11", iftar: "18:40", yatsi: "20:03" },
+            { gun: 16, tarih: "6 Mart 2026", imsak: "5:17", sabah: "5:37", gunes: "6:50", ogle: "12:55", ikindi: "16:12", iftar: "18:41", yatsi: "20:04" },
+            { gun: 17, tarih: "7 Mart 2026", imsak: "5:16", sabah: "5:36", gunes: "6:49", ogle: "12:55", ikindi: "16:12", iftar: "18:42", yatsi: "20:05" },
+            { gun: 18, tarih: "8 Mart 2026", imsak: "5:14", sabah: "5:34", gunes: "6:47", ogle: "12:55", ikindi: "16:13", iftar: "18:43", yatsi: "20:06" },
+            { gun: 19, tarih: "9 Mart 2026", imsak: "5:13", sabah: "5:33", gunes: "6:46", ogle: "12:54", ikindi: "16:13", iftar: "18:44", yatsi: "20:07" },
+            { gun: 20, tarih: "10 Mart 2026", imsak: "5:11", sabah: "5:31", gunes: "6:44", ogle: "12:54", ikindi: "16:14", iftar: "18:45", yatsi: "20:08" },
+            { gun: 21, tarih: "11 Mart 2026", imsak: "5:10", sabah: "5:30", gunes: "6:43", ogle: "12:54", ikindi: "16:14", iftar: "18:46", yatsi: "20:09" },
+            { gun: 22, tarih: "12 Mart 2026", imsak: "5:08", sabah: "5:28", gunes: "6:42", ogle: "12:54", ikindi: "16:15", iftar: "18:46", yatsi: "20:10" },
+            { gun: 23, tarih: "13 Mart 2026", imsak: "5:07", sabah: "5:27", gunes: "6:40", ogle: "12:53", ikindi: "16:15", iftar: "18:47", yatsi: "20:10" },
+            { gun: 24, tarih: "14 Mart 2026", imsak: "5:05", sabah: "5:25", gunes: "6:39", ogle: "12:53", ikindi: "16:16", iftar: "18:48", yatsi: "20:11" },
+            { gun: 25, tarih: "15 Mart 2026", imsak: "5:04", sabah: "5:24", gunes: "6:37", ogle: "12:53", ikindi: "16:16", iftar: "18:49", yatsi: "20:12" },
+            { gun: 26, tarih: "16 Mart 2026", imsak: "5:02", sabah: "5:22", gunes: "6:36", ogle: "12:53", ikindi: "16:17", iftar: "18:50", yatsi: "20:13" },
+            { gun: 27, tarih: "17 Mart 2026", imsak: "5:01", sabah: "5:21", gunes: "6:34", ogle: "12:52", ikindi: "16:17", iftar: "18:51", yatsi: "20:14" },
+            { gun: 28, tarih: "18 Mart 2026", imsak: "4:59", sabah: "5:19", gunes: "6:33", ogle: "12:52", ikindi: "16:17", iftar: "18:52", yatsi: "20:15" },
+            { gun: 29, tarih: "19 Mart 2026", imsak: "4:58", sabah: "5:18", gunes: "6:31", ogle: "12:52", ikindi: "16:18", iftar: "18:53", yatsi: "20:16" }
+        ];
+
+        const TR_MONTHS = { 'Ocak': 0, 'Şubat': 1, 'Mart': 2, 'Nisan': 3, 'Mayıs': 4, 'Haziran': 5, 'Temmuz': 6, 'Ağustos': 7, 'Eylül': 8, 'Ekim': 9, 'Kasım': 10, 'Aralık': 11 };
+        const TR_DAYS = ['Pazar', 'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi'];
+
+        function parseTurkishDate(s) { const p = s.split(' '); return new Date(parseInt(p[2]), TR_MONTHS[p[1]], parseInt(p[0])) }
+        function timeToMinutes(t) { const [h, m] = t.split(':').map(Number); return h * 60 + m }
+        function getDateWithTime(d, t) { const [h, m] = t.split(':').map(Number); const r = new Date(d); r.setHours(h, m, 0, 0); return r }
+        function getTodayData() {
+            const n = new Date(), ts = `${n.getFullYear()}-${String(n.getMonth() + 1).padStart(2, '0')}-${String(n.getDate()).padStart(2, '0')}`;
+            for (const day of IMSAKIYE_DATA) { const d = parseTurkishDate(day.tarih); if (`${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}` === ts) return day }
+            return null;
+        }
+        function isToday(s) { const d = parseTurkishDate(s), n = new Date(); return d.getFullYear() === n.getFullYear() && d.getMonth() === n.getMonth() && d.getDate() === n.getDate() }
+        function isPast(s) { const d = parseTurkishDate(s), n = new Date(); n.setHours(0, 0, 0, 0); d.setHours(0, 0, 0, 0); return d < n }
+        function getDayOfWeek(s) { return TR_DAYS[parseTurkishDate(s).getDay()] }
+
+        function createStars() {
+            const c = document.getElementById('bgStars');
+            for (let i = 0; i < 60; i++) {
+                const s = document.createElement('div'); s.className = 'star';
+                const size = Math.random() * 2.5 + 1;
+                s.style.width = size + 'px'; s.style.height = size + 'px';
+                s.style.left = Math.random() * 100 + '%'; s.style.top = Math.random() * 100 + '%';
+                s.style.animationDuration = (Math.random() * 4 + 2) + 's'; s.style.animationDelay = (Math.random() * 4) + 's';
+                c.appendChild(s);
+            }
+        }
+
+        function updateHero() {
+            const today = getTodayData(), now = new Date();
+            let activeDay = today;
+            if (!activeDay) { for (const day of IMSAKIYE_DATA) { const d = parseTurkishDate(day.tarih); d.setHours(23, 59, 59); if (d >= now) { activeDay = day; break } } if (!activeDay) activeDay = IMSAKIYE_DATA[IMSAKIYE_DATA.length - 1] }
+            document.getElementById('heroDate').textContent = `${getDayOfWeek(activeDay.tarih)}, ${activeDay.tarih}`;
+            document.getElementById('heroDayInfo').textContent = `Ramazan'ın ${activeDay.gun}. Günü`;
+            const timeLabels = [{ key: 'imsak', label: 'İmsak' }, { key: 'sabah', label: 'Sabah' }, { key: 'gunes', label: 'Güneş' }, { key: 'ogle', label: 'Öğle' }, { key: 'ikindi', label: 'İkindi' }, { key: 'iftar', label: 'İftar' }, { key: 'yatsi', label: 'Yatsı' }];
+            const nowMin = now.getHours() * 60 + now.getMinutes();
+            let activeTimeKey = null;
+            if (today) { const times = timeLabels.map(t => ({ ...t, mins: timeToMinutes(today[t.key]) })); for (let i = times.length - 1; i >= 0; i--) { if (nowMin >= times[i].mins) { activeTimeKey = times[i].key; break } } }
+            document.getElementById('todayTimes').innerHTML = timeLabels.map(t => `<div class="today-time-item ${t.key === activeTimeKey ? 'active' : ''}"><div class="today-time-label">${t.label}</div><div class="today-time-value">${activeDay[t.key]}</div></div>`).join('');
+            updateCountdown(activeDay);
+        }
+
+        function updateCountdown(dayData) {
+            const now = new Date(), dayDate = parseTurkishDate(dayData.tarih);
+            const iftarTime = getDateWithTime(dayDate, dayData.iftar), imsakTime = getDateWithTime(dayDate, dayData.imsak);
+            const cl = document.getElementById('countdownLabel'), bt = document.getElementById('heroBadgeText');
+            const isTd = isToday(dayData.tarih); let diff;
+            if (isTd && now < imsakTime) { cl.textContent = 'Sahura Kalan Süre'; diff = imsakTime - now; document.getElementById('progressStartLabel').textContent = 'Şimdi'; document.getElementById('progressEndLabel').textContent = 'İmsak'; const mn = new Date(dayDate); mn.setHours(0, 0, 0, 0); document.getElementById('heroProgressFill').style.width = Math.min(100, (now - mn) / (imsakTime - mn) * 100) + '%'; bt.textContent = 'Sahur Vakti' }
+            else if (isTd && now >= imsakTime && now < iftarTime) { cl.textContent = 'İftara Kalan Süre'; diff = iftarTime - now; document.getElementById('progressStartLabel').textContent = 'İmsak'; document.getElementById('progressEndLabel').textContent = 'İftar'; document.getElementById('heroProgressFill').style.width = Math.min(100, (now - imsakTime) / (iftarTime - imsakTime) * 100) + '%'; bt.textContent = 'Oruç Vakti' }
+            else if (isTd && now >= iftarTime) { cl.textContent = 'İftar Vakti Geldi!'; diff = 0; document.getElementById('heroProgressFill').style.width = '100%'; document.getElementById('progressStartLabel').textContent = '🎉'; document.getElementById('progressEndLabel').textContent = 'Hayırlı İftarlar'; bt.textContent = 'İftar Vakti' }
+            else { cl.textContent = 'İftara Kalan Süre'; diff = Math.max(0, iftarTime - now); document.getElementById('heroProgressFill').style.width = '0%'; document.getElementById('progressStartLabel').textContent = 'İmsak'; document.getElementById('progressEndLabel').textContent = 'İftar'; bt.textContent = 'Yaklaşan' }
+            if (diff <= 0) { document.getElementById('cdHours').textContent = '00'; document.getElementById('cdMinutes').textContent = '00'; document.getElementById('cdSeconds').textContent = '00' }
+            else { const ts = Math.floor(diff / 1000); document.getElementById('cdHours').textContent = String(Math.floor(ts / 3600)).padStart(2, '0'); document.getElementById('cdMinutes').textContent = String(Math.floor((ts % 3600) / 60)).padStart(2, '0'); document.getElementById('cdSeconds').textContent = String(ts % 60).padStart(2, '0') }
+        }
+
+        function renderDaysGrid() {
+            const grid = document.getElementById('daysGrid'), now = new Date();
+            grid.innerHTML = IMSAKIYE_DATA.map((day, idx) => {
+                const tc = isToday(day.tarih) ? 'today' : '', pc = isPast(day.tarih) && !isToday(day.tarih) ? 'past' : '';
+                const dow = getDayOfWeek(day.tarih); let ch = '';
+                const dd = parseTurkishDate(day.tarih), it = getDateWithTime(dd, day.iftar);
+                if (isToday(day.tarih)) { if (now < it) { const d = it - now, ts = Math.floor(d / 1000); ch = `<div class="day-iftar-countdown" data-day="${day.gun}">🕐 İftara ${Math.floor(ts / 3600)} saat ${Math.floor((ts % 3600) / 60)} dk kaldı</div>` } else ch = `<div class="day-iftar-countdown passed">🎉 Hayırlı İftarlar!</div>` }
+                else if (!isPast(day.tarih)) { const df = Math.ceil((dd - new Date(now.getFullYear(), now.getMonth(), now.getDate())) / 864e5); if (df > 0) ch = `<div class="day-iftar-countdown">${df} gün sonra</div>` }
+                else ch = `<div class="day-iftar-countdown passed">✓ Tamamlandı</div>`;
+                return `<div class="day-card ${tc} ${pc}" style="animation-delay:${idx * 0.04}s"><div class="day-card-header"><div style="display:flex;align-items:center;gap:12px"><div class="day-number">${day.gun}</div><div><div class="day-date">${day.tarih}</div><div style="font-size:0.72rem;color:var(--text-muted)">${dow}</div></div></div><div class="day-today-badge">BUGÜN</div></div><div class="day-times-grid"><div class="day-time-cell imsak-cell"><div class="day-time-cell-label">İmsak</div><div class="day-time-cell-value">${day.imsak}</div></div><div class="day-time-cell"><div class="day-time-cell-label">Güneş</div><div class="day-time-cell-value">${day.gunes}</div></div><div class="day-time-cell"><div class="day-time-cell-label">Öğle</div><div class="day-time-cell-value">${day.ogle}</div></div><div class="day-time-cell"><div class="day-time-cell-label">İkindi</div><div class="day-time-cell-value">${day.ikindi}</div></div><div class="day-time-cell iftar-cell"><div class="day-time-cell-label">İftar</div><div class="day-time-cell-value">${day.iftar}</div></div><div class="day-time-cell"><div class="day-time-cell-label">Yatsı</div><div class="day-time-cell-value">${day.yatsi}</div></div></div>${ch}</div>`
+            }).join('');
+        }
+
+        function updateLiveCountdowns() {
+            const now = new Date(), today = getTodayData();
+            if (today) { const el = document.querySelector(`.day-iftar-countdown[data-day="${today.gun}"]`); if (el) { const it = getDateWithTime(parseTurkishDate(today.tarih), today.iftar); if (now < it) { const ts = Math.floor((it - now) / 1000); el.textContent = `🕐 İftara ${Math.floor(ts / 3600)} saat ${Math.floor((ts % 3600) / 60)} dk ${ts % 60} sn kaldı` } else { el.textContent = '🎉 Hayırlı İftarlar!'; el.classList.add('passed') } } }
+        }
+
+        function scrollToToday() { const tc = document.querySelector('.day-card.today'); if (tc) setTimeout(() => tc.scrollIntoView({ behavior: 'smooth', block: 'center' }), 800) }
+
+        function init() { createStars(); renderDaysGrid(); updateHero(); scrollToToday(); setInterval(() => { updateHero(); updateLiveCountdowns() }, 1000) }
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+
+</html>
